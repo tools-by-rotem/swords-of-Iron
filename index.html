@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תרשים זרימה: אירועי "חרבות ברזל" - פלוגת להבה</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .timeline {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .event {
+            position: relative;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+        .event:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .event::after {
+            content: '▼';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #666;
+        }
+        .event:last-child::after {
+            display: none;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        .tooltip-icon {
+            cursor: help;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 0.8em;
+            border: 1px solid #0066cc;
+            border-radius: 50%;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <h1>אירועי "חרבות ברזל" - פלוגת להבה</h1>
+        
+        <div class="event">
+            7 באוקטובר – חמאס פורץ לשטח מדינת ישראל במהלך חג שמחת תורה
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">חמאס מבצע התקפה רחבה הכוללת רצח, חטיפות ופגיעה באזרחים</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            8 באוקטובר – הפלוגה מוקפצת לנפתלי
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">החיילים חותמים על ציוד ונשקים וישנים בשטח מחוץ לבסיס</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            9 באוקטובר – ירידה במטוס הרקולס לשזפון להכנת הטנקים לקרב
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">קבלת הטנקים של הטירונים ומילוי פגזים</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            12 באוקטובר – הגעה למטמנת עברון
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">תחילת האימונים על הטנקים, כולל תרגולות של פינוי פצועים וכיבוי אש</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            המעבר למטמנת עברון 2– הפלוגה עוברת לשטח פלוגתי מעבר לכביש לאחר שהתמקמנו כמו שצריך בשטח הראשון
+        </div>
+        
+        <div class="event">
+            השבת החומה – מכת שלשולים פוקדת את הפלוגה בעקבות בקר חמוץ (מקור המונח "חמצמצת")
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">בערב שישי הפלוגה קיבלה תרומה של חמגשיות. במהלך השבת חלק נכבד מהפלוגה סובלים משלשולים בזמן שהגשם הקר מחייב לאלתר תנאים לשהייה</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            הופעות של ישי ריבו, אביב גפן, אודי כגן ועברי לידר
+        </div>
+        
+        <div class="event">
+            23 באוקטובר – אימונים ברמת הגולן
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">תרגילים מחלקתיים עם גדוד 66</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            28 באוקטובר - מעבר לחצרות יסף ואבטחת נהריה
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">שיפור בתנאים: קרבה לים ושינה באוהלים גדולים</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            5 בנובמבר – הודעה על מעבר לדרום
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">מד"ס, קריוקי והודעה על הקפצה לעזה</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            7 בנובמבר – צוות חלוץ נשלח לש.כ ליד מגן להביא טנקים
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">שני טנקים הוחזרו לשזפון</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            9 בנובמבר – הכנות למתאר הלחימה בעזה
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">התקנת פלטות גחון ושיני חזיר על הטנקים</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            10 בנובמבר - דחיית הירידה ביממה
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">הפלוגה יוצאת לשבת וחוזרת לשטחי הכינוס בשל הפסקת אש</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            המ"פ אלנתן יוצא לקליפורניה – אלנתן טס כדי להחזיר את משפחתו לארץ לפני הכניסה לחאן יונס
+        </div>
+        
+        <div class="event">
+            אימונים בצאלים – הפלוגה מתאמנת עם נאור סלע, הסמ"גד
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">האימון כולל תרגילים ברמת גדוד עם גדוד 66 של הצנחנים</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            שבת אחרונה באופקים – הכנה לפני הכניסה ללחימה
+        </div>
+        
+        <div class="event">
+            22 בנובמבר – נולד הילד הראשון לג'וש במהלך הלחימה
+        </div>
+        
+        <div class="event">
+            3 בדצמבר – הפלוגה יוצאת ללחימה בפאתי חאן יונס, מתחילה אש עם האויב
+        </div>
+        
+        <div class="event">
+            6 בדצמבר – מתקפה על מארב 220
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">המתקפה כוללת כיבוש שכונה והובלת די-9ים להריסת בתים</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            7 בדצמבר – הדלקת נר ראשון של חנוכה מאחורי הטנקים בתוך המגנן
+        </div>
+        
+        <div class="event">
+            17 בדצמבר – נולד הילד השני לבני במהלך הלחימה
+        </div>
+        
+        <div class="event">
+            19 בדצמבר – פציעת אושר אריה ממטען
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">המחבל חוסל, טנקים מוקפצים קדימה</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            20 בדצמבר – הפלוגה נכנסת שוב לאותו אזור מארב ומשתמשת בכוח הנדסה גדודי להטמנת מטענים
+        </div>
+        
+        <div class="event">
+            21 בדצמבר – במהלך משימה נתקלו במערב משולב עם מחבל שנושא מטען הצמדה לעבר די-9
+        </div>
+        
+        <div class="event">
+            22 בדצמבר – במהלך מתקפה נוספת מתגלה פיר משמעותי
+            <span class="tooltip"><span class="tooltip-icon">?</span>
+                <span class="tooltiptext">תוך כדי ירי RPG שמתפוצץ ליד הטנק של שמחון הסמ"פ</span>
+            </span>
+        </div>
+        
+        <div class="event">
+            1 בינואר – מתקפה על מתחם חדש, קרבות קשוחים
+        </div>
+        
+        <div class="event">
+            28 בינואר – יציאה מעזה ברגשות מעורבים, סיום סדרת הקרבות הקשוחים
+        </div>
+    </div>
+</body>
+</html>
